@@ -8,19 +8,22 @@
 
 function Person(FirstName, LastName, Age) {
         //Parameters/Properties as Constructor
+        this.firstName = firstName ||"unknown";
+        this.lastName = lastName ||"unknown";   
+        this.age = Age ||"unknown";
         
         //Method
         this.getFullName = function () {
-            return this.firstName + " " + this.lastName;
+            return this.firstName + " " + this.lastName+ " " + this.age;
         }
 };
 
 //Create object 1
-var person1 = new Person();
+var person1 = new Person("James","Bond",50);
 alert(person1.getFullName());
 
 //Create object 2
-var person2 = new Person();
+var person2 = new Person("Wonder","Woman",30);
 alert(person2.getFullName());
 
 </script>

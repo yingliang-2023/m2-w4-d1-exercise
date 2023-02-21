@@ -9,10 +9,17 @@
 <body>
 
 <div id="vueapp">
-    
+    {{greeting}}
 </div>
 
 <script>
+    //vue instance
+    var app=new Vue({
+        el: '#vueapp',//entry point
+        data:{
+            greeting:'Hello World!'
+        }
+    });
 
 </script>
     

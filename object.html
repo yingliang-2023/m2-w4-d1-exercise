@@ -10,7 +10,8 @@ var car = {
     model : 'Civic', 
     price : '25000', 
     displayInfo : function(){ 
-        console.log(`${} has many models but ${} is $${}`); 
+        console.log(`${this.type} has many models but ${this.model} is $${this.price}`); //template literal
+        console.log(this.type + "has many models but "+this.model+" is "+ this.price); //concatenation
     } 
 } 
 car.displayInfo();  

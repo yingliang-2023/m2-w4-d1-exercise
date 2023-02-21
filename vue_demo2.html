@@ -9,14 +9,16 @@
 <body>
 
 <div id="vueapp">
-    {{ greeting }}
+   <h1>{{ greeting }}</h1>
+    <p>{{ message }}</p>
 </div>
 
 <script>
     var app = new Vue({
         el: '#vueapp',
         data: {
-            greeting: 'Hello World!'
+            greeting: 'Hello World!',
+            message:"I' leanrning Vue for the first time",
         }
     });
 </script>
